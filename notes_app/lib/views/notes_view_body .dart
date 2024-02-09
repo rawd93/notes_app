@@ -1,8 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:notes_app/views/widget/custom%20_appBar.dart';
 import 'package:notes_app/views/widget/custom_notes_Iteam.dart';
+import 'package:notes_app/views/widget/notes_list_view.dart';
 
 class NotesViewBody extends StatelessWidget {
   const NotesViewBody({super.key});
@@ -18,7 +17,7 @@ class NotesViewBody extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        NotesIteam(),
+        Expanded(child: NotesListView()),
       ],
     );
   }
